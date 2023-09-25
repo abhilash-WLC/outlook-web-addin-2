@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="web-addin"/>
+  <DisplayName DefaultValue="outlook web-addin"/>
   <Description DefaultValue="A template to get started."/>
   <IconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-128.png"/>

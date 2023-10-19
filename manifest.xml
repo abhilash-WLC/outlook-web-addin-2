@@ -2,13 +2,13 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>c85ffa69-35e3-4e9b-9ca8-3d7294090fdb</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>Streamline</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="outlook web-addin"/>
-  <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/help"/>
+  <DisplayName DefaultValue="Streamline"/>
+  <Description DefaultValue="Streamline AI provides self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm."/>
+  <IconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/help"/>
   <AppDomains>
     <AppDomain>https://abhilash-wlc.github.io/outlook-web-addin-2/</AppDomain>
   </AppDomains>
@@ -23,12 +23,13 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/taskpane.html"/>
+        <SourceLocation DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteItem</Permissions>
+  <!-- <Permissions>ReadWriteItem</Permissions> -->
+  <Permissions>ReadWriteMailbox</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
   </Rule>
@@ -85,16 +86,16 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/taskpane.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://abhilash-wlc.github.io/outlook-web-addin-2/hello/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
+        <bt:String id="GroupLabel" DefaultValue="Streamline"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
         <bt:String id="ActionButton.Label" DefaultValue="Perform an action"/>
       </bt:ShortStrings>
@@ -103,5 +104,14 @@
         <bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/>
       </bt:LongStrings>
     </Resources>
+    <!-- <WebApplicationInfo>
+       <Id>65e1ac49-448a-4835-9d29-a22097991226</Id>
+      <Resource>api://vishwajeet-wlc.github.io/hello/65e1ac49-448a-4835-9d29-a22097991226</Resource>
+      <Scopes>
+          <Scope>openid</Scope>
+          <Scope>user.read</Scope>
+          <Scope>profile</Scope>
+      </Scopes>
+    </WebApplicationInfo> -->
   </VersionOverrides>
 </OfficeApp>
